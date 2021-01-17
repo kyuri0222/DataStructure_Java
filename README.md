@@ -1,2 +1,2 @@
-# algorithm
-algorithm study
+# algorithm_exercise
+algorithm exercise
