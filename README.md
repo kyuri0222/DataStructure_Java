@@ -1,2 +1,2 @@
-# DataStructure_withJava
-DataStructure_withJava
+# DataStructure_Java
+DataStructure_Java
