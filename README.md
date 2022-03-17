@@ -1,2 +1,2 @@
-# algorithm_exercise
-algorithm exercise
+# DataStructure_exercise
+DataStructure_exercise
