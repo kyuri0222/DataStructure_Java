@@ -53,7 +53,7 @@ public class DList <E> {
 	if (size>0)
 		for (DNode p = head.getNext(); p != tail; p=p.getNext())
 			System.out.print(p.getItem()+"\t");
-	else 
+	else  
 		System.out.println("리스트 비어있음");
 	System.out.println();
 	}
