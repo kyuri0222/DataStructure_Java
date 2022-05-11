@@ -80,6 +80,37 @@ public class ListStack <E> {
 		else { return false; }
 	}
 	
+	
+	
+	/* 교수님 답안 
+	 
+	 	public static void checkPaired(String s) {
+		ListStack<Character> stack = new ListStack<Character>();
+		int mis match = -1;
+		
+		for (int i=0; i < i<string.length() && mismatch==01; i++{
+			swith(s.charAt(i)){
+			case '(':
+			case '{': stack.push(s.charAt(i)); break;
+			case ')': if (stack.isEmpty()) mismatch = i ;
+					  else if (stack.pop() != '(')  mismatch = i ;
+					  break;
+			case '}': if (stack.isEmpty()) mismatch = i ;
+					  else if (stack.pop() != '{')  mismatch = i ;
+					  break;
+			}
+		}
+		
+		if (mismatch !- -1)
+			System.out.println(s.substring(0,mismatch)+
+				"^^^부터 괄호 쌍이 맞지 않습니다.");
+		else if (!stack.isEmpty())
+		 System.out.println(s+ "^^^부터 괄호 쌍이 맞지 않습니다.");
+		else
+	 		System.out.println("괄호 쌍이 맞습니다.");
+	 
+	 */
+	
 	// 스택의 항목들을 아래에서 위로 출력
 	public void print() {
 		if (isEmpty())
