@@ -11,14 +11,10 @@ public class ArrayQueue<E> {
 	}
 
 	// 큐에 있는 항목의 수를 리턴
-	public int size() {
-		return size;
-	}
+	public int size() { return size; }
 
 	// 큐가 empty이면 true를 리턴
-	public boolean isEmpty() {
-		return size == 0;
-	}
+	public boolean isEmpty() { return size == 0; }
 
 	// 큐에 항목 삽입
 	public void add(E newItem) {
