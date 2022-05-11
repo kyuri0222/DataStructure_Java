@@ -33,6 +33,7 @@ public class Main {
 		System.out.println("----------------");
 		System.out.println(" ");
 		
+		
 		// 20번 
 		SList<Integer> sl = new SList<Integer>();
 		sl.insertFront(45);

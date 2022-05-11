@@ -85,6 +85,35 @@ public class SList <E extends Comparable<E>> {
 		return this;
 	}
 	
+	/* 교수님 답안 
+	 
+	 public SList mergeTwoLists(Node p1, Node p2) {
+		Node head = new Node (0,null);  
+		Node p = head;
+		
+		while(p1!=null && p2!=null) {
+			// compareTo : 기본형 객체 & string 객체에는 이미 compareTo()가 있음
+			int c = p1.getItem().compareTo(p2.getItem());
+			
+			if (c < 0) {
+			p.setNext(p1);
+			p1=p1.getNext();
+			}
+			else {
+			p.setNext(p2);
+			p2=p2.getNext();
+			}
+			p = p.getNext();
+		}
+			
+		if(p1!=null) p.setNext(p1);
+		if(p2!=null) p.setNext(p2);
+		
+		return head.getNext();
+	}
+	
+	 */
+	
 	// 20번 
 	public void splitList(Node p, int k, SList l1, SList l2) {
 		while(p != null) {
@@ -97,6 +126,36 @@ public class SList <E extends Comparable<E>> {
 			p=p.getNext();
 		}
 	}
+	
+	
+	/* 교수님 답안 
+	 
+	 	public void splitList(Node p, int k, SList l1, SList l2) {
+			Node head1 = new Node(0,null);
+			Node head2 = new Node(0,null);
+			Node p1 = head1;
+			Node p2 = head2;
+	
+			while(p != null) {
+				int c = p.getItem().compareTo(k);
+				if (c<0) {
+					p1.setNext(p);
+					p1.getNext();
+				} 
+				else {
+					p2.setNext(p);
+					p2.getNext();			
+				}
+				p=p.getNext();
+		}
+		
+		p1.setNext(null);
+		p2.setNext(null);
+		l1.setHead(head1,getNext());
+		l2.setHead(head2,getNext());
+	}
+	 */
+	 
 	
 	// 출력 
 	public void print() {
