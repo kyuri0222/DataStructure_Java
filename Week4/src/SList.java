@@ -19,11 +19,10 @@ public class SList <E extends Comparable<E>> {
 		Node p = head;
 		
 		for(int k=0; k<size; k++) {
-			if(target == p.getItem()) return k;
+			if(target == p.getItem()) return k; // 찾으면 
 			p=p.getNext();
 		}
-		
-		return -1; // 탐색을 실패한 경우 -1 리턴 
+		return -1; // 못찾으면 -1 리턴 
 	}
 	
 	// 연결리스트 맨 앞에 새 노드 삽입 
@@ -32,13 +31,13 @@ public class SList <E extends Comparable<E>> {
 		size++;
 	}
 	
-	// 노드 p 바로 다음에 새 노드 삽입 
-	public void insertAfter(E newItem, Node p) {
+	// p 다음에 새노드 삽입 
+	public void insertAfter(E newItem, Node p) { // 앞에있는노드 p
 		p.setNext(new Node(newItem, p.getNext()));
 		size++;
 	}
 	
-	// 리스트의 첫 노드 삭제 
+	// 첫 노드 삭제 
 	public void deleteFront() {
 		if(isEmpty()) throw new NoSuchElementException();
 		
@@ -46,7 +45,7 @@ public class SList <E extends Comparable<E>> {
 		size--;
 	}
 	
-	// p가 가리키는 노드의 다음 노드를 삭제 
+	// p 다음 노드를 삭제 
 	public void deleteAfter(Node p) {
 		if(p==null) throw new NoSuchElementException();
 		

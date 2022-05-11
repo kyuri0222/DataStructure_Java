@@ -18,7 +18,7 @@ public class DList <E> {
 	public boolean isEmpty() { return size==0; }
 	
 	
-	// p가 가리키는 노드 앞에 삽입
+	// p 앞에 삽입
 	public void insertBefore(DNode p, E newItem) {
 		DNode t = p.getPrevious();
 		DNode newNode = new DNode(newItem,t,p);
@@ -27,7 +27,7 @@ public class DList <E> {
 		size++;
 	}
 	
-	// p가 가리키는 노드 뒤에 삽입
+	// p 뒤에 삽입
 	public void insertAfter(DNode p, E newItem) {
 		DNode t = p.getNext();
 		DNode newNode = new DNode(newItem, p, t);
@@ -37,7 +37,7 @@ public class DList <E> {
 
 	}
 	
-	// x가 가리키는 노드 삭제 
+	// x 삭제 
 	public void delete(DNode x) {
 		if (x==null) throw new NoSuchElementException();
 		
